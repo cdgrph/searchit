@@ -55,6 +55,9 @@ var ElementFilters = (function() {
 
 			// Update
 			updateElementFilters();
+			
+			// Update on site switched
+			document.getElementById('context-btn').addEventListener('click', updateElementFilters);
 		};
 
 		var initElementFilterPreview = function() {
